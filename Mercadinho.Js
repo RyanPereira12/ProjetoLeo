@@ -8,9 +8,9 @@ function cadastrar() {
 
     if (nomeDosProdutos && valorDosProdutos) {
         nomeProduto.push(nomeDosProdutos);
-        valorProduto.push(valorDosProduto);
+        valorProduto.push(valorDosProdutos);
         let Tabela = document.getElementById("Tabela").innerHTML = "<tr><th> Nome Do Produto </th><th> Valor Do Produto </th></tr>";
-        for (Quantidade = 0; Quantidade <= (nomeDosProdutos.length - 1); Quantidade++) {
+        for (Quantidade = 0; Quantidade <= (nomeProduto.length - 1); Quantidade++) {
             Tabela += "<tr><td>" + nomeProduto[Quantidade] + "</td><td>" + valorProduto[Quantidade] + "</td></tr>";
             document.getElementById("Tabela").innerHTML = Tabela;
         }
